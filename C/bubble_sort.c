@@ -3,14 +3,14 @@
 void sortArray(int*, int);
 
 int main() {
-  int unsortedArray[12] = {4, 11, 6, 27, 84, 53, 39, 45, 122, 99, 113, 2};
-  int size =  sizeof(unsortedArray) / sizeof(int);
+  int arr[12] = {4, 11, 6, 27, 84, 53, 39, 45, 122, 99, 113, 2};
+  int size = sizeof(arr) / sizeof(int);
 
-  sortArray(unsortedArray, size);
+  sortArray(arr, size);
 
   printf("[");
   for (int i = 0; i < size; i++){
-    printf("%d, ", unsortedArray[i]);
+    printf("%d, ", arr[i]);
   }
   printf("\b\b]\n");
   return 0;

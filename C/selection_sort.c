@@ -3,14 +3,14 @@
 void selectionSort(int*, int);
 
 int main(){
-  int unsortedArray[6] = {2, 5, 9, 1, 6, 3};
-  int size = sizeof(unsortedArray) / sizeof(int);
+  int arr[6] = {2, 5, 9, 1, 6, 3};
+  int size = sizeof(arr) / sizeof(int);
 
-  selectionSort(unsortedArray, size);
+  selectionSort(arr, size);
 
   printf("[");
   for (int i = 0; i < size; i++){
-    printf("%d, ", unsortedArray[i]);
+    printf("%d, ", arr[i]);
   }
   printf("\b\b]\n");
   return 0;
