@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-void quicksort(int[], int, int);
+void quickSort(int[], int, int);
 int partition(int[], int, int);
 void swap(int*, int*);
 
 int main(){
   int array[] = {7, 2, 3, 5, 9, 14, 8, 6};
   int size = sizeof(array) / sizeof(int);
-  quicksort(array, 0, size - 1);
+  quickSort(array, 0, size - 1);
 
   printf("[");
   for (int i = 0; i < size; i++){
@@ -18,11 +18,11 @@ int main(){
   return 0;
 }
 
-void quicksort(int arr[], int start, int end){
+void quickSort(int arr[], int start, int end){
   if (start < end) {
     int partitionIndex = partition(arr, start, end);
-    quicksort(arr, start, partitionIndex - 1);
-    quicksort(arr, partitionIndex + 1, end);
+    quickSort(arr, start, partitionIndex - 1);
+    quickSort(arr, partitionIndex + 1, end);
   }
 }
 
