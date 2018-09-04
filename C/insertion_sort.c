@@ -15,8 +15,6 @@ int main()
   }
   printf("\b\b]\n");
   return 0;
-
-  return 0;
 }
 
 void insertionSort(int arr[], int size){
