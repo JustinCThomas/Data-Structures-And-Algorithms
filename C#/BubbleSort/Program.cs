@@ -6,6 +6,10 @@ namespace C_
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Bubble Sort in C#!\n");
+            Console.ResetColor();
+
             int[] arr = {4, 11, 6, 27, 84, 53, 39, 45, 122, 99, 113, 2};
 
             Console.WriteLine("Before Sorting:");
